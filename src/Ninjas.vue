@@ -1,0 +1,24 @@
+<template>
+	<div>
+	<h1>List of Ninjas</h1>
+  <ul>
+  	<li v-for="ninja in ninjas">{{ninja}}</li>
+  </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      ninjas: ['Artur' , 'Mario', 'Harry', 'Anton']
+    }
+  }
+}
+</script>
+
+<style scoped>
+	h1{
+		color: green;
+	}
+</style>
