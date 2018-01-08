@@ -27,6 +27,25 @@ export default {
     deleteNinja: function() {
       this.ninjas.pop()
     }
+  },
+  //lifecycle hooks
+  beforeCreate(){
+    console.log('BeforeCreate'); // empty screen
+  },
+  created() {
+    console.log('Created'); // empty screen
+  },
+  beforeMount(){
+    console.log('BeforeMount'); // empty screen
+  },
+  mounted(){
+    console.log('Mounted'); // Page appears only after this step
+  },
+  beforeUpdate() {
+    console.log('beforeUpdate'); // Works only if something change on the page but doesn't affect  page looks
+  },
+  updated(){
+    console.log('Updated'); // page updated but changes apears only after this page 
   }
 }
 </script>
